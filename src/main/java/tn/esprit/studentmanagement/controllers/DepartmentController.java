@@ -19,9 +19,7 @@ public class DepartmentController {
    
   
 
-    @GetMapping("/getDepartment/{id}")
-    public Department getDepartment(@PathVariable Long id) { return departmentService.getDepartmentById(id); }
-
+ 
     @PostMapping("/createDepartment")
     public Department createDepartment(@RequestBody Department department) { return departmentService.saveDepartment(department); }
 
