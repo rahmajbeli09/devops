@@ -16,7 +16,8 @@ import java.util.List;
 public class DepartmentController {
     private IDepartmentService departmentService;
 
-   
+    
+  
 
     @GetMapping("/getDepartment/{id}")
     public Department getDepartment(@PathVariable Long id) { return departmentService.getDepartmentById(id); }
